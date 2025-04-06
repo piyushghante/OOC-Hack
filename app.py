@@ -216,7 +216,7 @@ with tab2:
         
         st.subheader("Eligibility Criteria")
         criteria_formatted = format_eligibility_criteria(st.session_state.criteria)
-        st.write(criteria_formatted)
+        st.markdown(criteria_formatted, unsafe_allow_html=True)
         
         st.subheader("Company Evaluation")
         st.write(st.session_state.evaluation)
