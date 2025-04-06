@@ -1,6 +1,7 @@
 from typing import Any, Dict, List, Tuple
 from transformers import PreTrainedTokenizerBase
 from model_manager import generate_text
+from bs4 import BeautifulSoup
 
 def summarize_rfp(model: Any, tokenizer: PreTrainedTokenizerBase, rfp_chunks: List[str]) -> str:
     chunk_summaries = []
